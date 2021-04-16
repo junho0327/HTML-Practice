@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>폼 태그 활용</h1>
+    <form action="http://daum.net" method="post">
+        <fieldset>
+            <legend>필수사항</legend>
+            <br> 이름: <input type="text" size="20" placeholder="이름을 쓰세요">
+            <br> 이메일주소: <input type="email" placeholder="ex@daum.net">
+            <br> 성별:
+            <label for="m"> 남자 </label> <input id="m" type="radio" name="gender" checked>
+            <label for="w"> 여자 </label> <input id="w" type="radio" name="gender">
+        </fieldset>
+
+        <fieldset>
+            <legend>추가입력사항</legend>
+            <br> 나이: <input type="number" value="20" max="30" step="1">
+            <br> 생년월일: <input type="date">
+            <br> 색상성택: <input type="color">
+            <br> 검색창: <input type="search" autofocus>
+            <br> 관심분야:
+            <input type="checkbox" name="ma" value="it">IT 분야
+            <input type="checkbox" name="ma" value="car">자동차
+            <input type="checkbox" name="ma" value="ani">애니메이션
+            <input type="checkbox" name="ma" value="mov">영화
+            <br><br>
+            <select> 주소지:
+                <option>서울시</option>
+                <option>경기도</option>
+                <option>인천시</option>
+                <option>충청도</option>
+            </select>
+            주소지: <select size="3">
+                <option>서울시</option>
+                <option>경기도</option>
+                <option>인천시</option>
+                <option>충청도</option>
+            </select>
+
+            <select>
+                <optgroup label="점심메뉴">
+                    <option>잡곡밥</option>
+                    <option>제육볶음</option>
+                    <option>소고기무국</option>
+                </optgroup>
+                <optgroup label="저녁메뉴">
+                    <option>흰쌀밥</option>
+                    <option>치즈돈까스</option>
+                    <option>미역국</option>
+                </optgroup>
+            </select>
+
+            <br> 파일 첨부 : <input type="file">
+            <br> datalist 태그
+            <input type="text" size="10" list="countyr">
+            <datalist id="countyr">
+                <option value="미국"></option>
+                <option value="중국"></option>
+                <option value="일본"></option>
+                <option value="영국"></option>
+            </datalist>
+        </fieldset>
+
+        <br>
+        <textarea name="memo" cols="70" rows="20">
+                이곳에 기재하세요.
+            </textarea>
+        <input type="submit" value="보내기"> <input type="reset"> <input type="image" src="tick.png">
+    </form>
+</body>
+
+</html>
